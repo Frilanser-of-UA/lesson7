@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="la">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__logo">
+			<p><span>b</span>ackgroun<span>d</span></p>
+		</div>
+		<nav class="nav">
+			<ul class="nav__manu">
+				<li><a href="#color">Background-color</a></li>
+				<li><a href="#image">Background-image</a></li>
+				<li><a href="#repeat">Background-repeat</a></li>
+				<li><a href="#position">Background-position</a></li>
+				<li><a href="#attachment">Background-attachment</a></li>
+				<li><a href="#siz">Background-size</a></li>
+				<li><a href="#many">Несколько изображений</a></li>
+			</ul>
+		</nav>
+		<div class="user">
+			<div class="user__login">
+				<p>Log In</p>
+			</div>
+			<div class="user__singup">
+				<p>Sign Up</p>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__color">
+			<h2 id="color"><span>Background</span>-color</h2>
+			<p>Определяет цвет фона элемента</p>
+			<div class="main__color-standart main__test-block">
+				<p>Определяет цвет фона элемента. По умолчанию без цвета.(Прозрачный)</p>
+			</div>
+			<div class="main__color-color main__test-block">
+				<p>Определяет цвет фона элемента. С заданым цветом. (Зелений). CSS: {background: #150} </p>
+			</div>
+			<div class="main__color-rbg main__test-block">
+				<p>Определяет цвет фона элемента. С заданым цветом. (Зелений) CSS: {background: rgb(17, 85, 0)}</p>
+			</div>
+			<div class="main__color-rbga main__test-block">
+				<p>Определяет цвет фона элемента. С заданым цветом. (Зелений) CSS: {background: rgba(17, 85, 0, 0.5)}</p>
+			</div>
+		</div>
+		<div class="main__image">
+			<h2 id="image"><span>Background</span>-image</h2>
+			<p>Устанавливает фоновое изображение для элемента либо задает градиентную заливку </p>
+			<div class="main__image-standart main__test-block">
+				<p>Устанавливает фоновое изображение для элемента либо задает градиентную заливку. (Картинка)
+					CSS:{background: url('Путь к картинке.')}</p>
+			</div>
+			<div class="main__gradient-linear main__test-block">
+				<p>Устанавливает фоновое изображение для элемента либо задает градиентную заливку. (Линейный градиент)
+					CSS:{background: linear-gradient(to bottom, rgba(255, 0, 0, 1) 0%,rgba(94,83,115,1)
+					50%,rgba(24,181,164,1) 100%)}</p>
+			</div>
+			<div class="main__gradient-radial main__test-block">
+				<p>Устанавливает фоновое изображение для элемента либо задает градиентную заливку. (Задиальний градиент)
+					CSS:{background: radial-gradient(ellipse at center, rgba(30,102,157,1) 0%, rgba(255, 0, 0, 1)
+					0%,rgba(24,181,164,1) 100%)}</p>
+			</div>
+		</div>
+		<div class="main__repeat">
+			<h2 id="repeat"><span>Background</span>-repeat</h2>
+			<p>Определяет, как будет повторяться фоновое изображение.</p>
+			<div class="main__repeat-standart main__test-block">
+				<p>По умолчанию. Фоновое изображение повторяется по горизонтали и вертикали.
+					CSS:{background: url('Путь к картинке.')}</p>
+			</div>
+			<div class="main__repeat-norepeat main__test-block">
+				<p>No-repeat. Устанавливает одно фоновое изображение в элементе без его повторений.
+					CSS:{background: url('Путь к картинке.') no-repeat}</p>
+			</div>
+			<div class="main__repeat-x main__test-block">
+				<p>Repeat-x. Фоновый рисунок повторяется только по горизонтали.
+					CSS:{background: url('Путь к картинке.') repeat-x}</p>
+			</div>
+			<div class="main__repeat-y main__test-block">
+				<p>Repeat-y. Фоновый рисунок повторяется только по вертикали.
+					CSS:{background: url('Путь к картинке.') repeat-y}</p>
+			</div>
+			<div class="main__spase main__test-block">
+				<p>Spase. Изображение повторяется столько раз, чтобы полностью заполнить область; если это не удаётся, между
+					картинками добавляется пустое пространство.
+					CSS:{background: url('Путь к картинке.') space}</p>
+			</div>
+			<div class="main__round main__test-block">
+				<p>Round. Изображение повторяется так, чтобы в области поместилось целое число рисунков; если это не удаётся
+					сделать, то фоновые рисунки масштабируются.
+					CSS:{background: url('Путь к картинке.') round}</p>
+			</div>
+		</div>
+		<div class="main__position">
+			<h2 id="position"><span>Background</span>-position</h2>
+			<p>Задает начальное положение фонового изображения, где первое значение (проценты, px, слово) определяет
+				расположение по горизонтали, второе - вертикали.</p>
+			<div class="main__position-standart main__test-block">
+				<p>По умолчанию.
+					CSS:{background: url('Путь к картинке.') 0 0 no-repeat}</p>
+			</div>
+			<div class="main__position-center main__test-block">
+				<p>По центру.
+					CSS:{background: url('Путь к картинке.') 50% no-repeat или CSS:{background: url('Путь к картинке.')}
+					center no-repeat</p>
+			</div>
+			<div class="main__position-left main__test-block">
+				<p>Слева.
+					CSS:{background: url('Путь к картинке.') 0 50% no-repeat или CSS:{background: url('Путь к картинке.')
+					left no-repeat}</p>
+			</div>
+			<div class="main__position-angle main__test-block">
+				<p> В углу.
+					CSS:{background: url('Путь к картинке.') 100% 100% no-repeat или CSS:{background: url('Путь к картинке.')
+					bottom right no-repeat}</p>
+			</div>
+			<div class="main__position-px main__test-block">
+				<p> Произвольные параметры.
+					CSS:{background: url('Путь к картинке.') 50px 25px no-repeat}</p>
+			</div>
+		</div>
+		<div class="main__attachment">
+			<h2 id="attachment"><span>Background</span>-attachment</h2>
+			<p>Устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента.
+			</p>
+			<div class="main__attachment-standart main__test-block">
+				<p>По умолчанию. Позволяет перемещаться фону вместе с окном браузера
+					CSS:{background: url('Путь к картинке.') 0 0 no-repeat scroll}</p>
+			</div>
+			<div class="main__attachment-fixed main__test-block">
+				<p>Fixed. Делает фоновое изображение элемента неподвижным, а так же устанавливает фоновое изображение
+					относительно окна браузера.
+					CSS:{background: url('Путь к картинке.') 0 0 no-repeat fixed}</p>
+			</div>
+			<div class="main__attachment-local main__test-block">
+				<p>Local. Фон фиксируется с учётом поведения элемента. Если элемент имеет прокрутку, то фон будет
+					прокручиваться вместе с содержимым, но фон выходящий за рамки элемента остаётся на месте.
+					CSS:{background: url('Путь к картинке.') 0 0 no-repeat local <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quo sed facilis aperiam, sit atque velit
+					aspernatur accusantium minus labore corporis quas nulla repellat ipsam, libero totam voluptatem eius.
+					Aut!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi doloremque, provident corrupti magni a
+					sit? Fuga quidem alias dolorum ducimus nostrum consequuntur? Eius voluptatum, rem rerum culpa eaque
+					aperiam aliquid numquam ut minima veritatis qui, fuga nesciunt, ad assumenda non tenetur deleniti labore.
+					Dolorem voluptatem quo nihil maiores deserunt quia? Nulla quisquam corporis recusandae praesentium? Sunt
+					velit corrupti pariatur. Animi sequi nam amet fuga, dolores doloribus illo deleniti reprehenderit
+					exercitationem quibusdam ratione aspernatur officiis, saepe fugiat est obcaecati distinctio iusto rerum,
+					dolorem iure eveniet! Obcaecati nihil, cupiditate ipsa minus fugit reiciendis vel hic? Consequatur facere
+					ullam temporibus repudiandae tenetur fugit?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsum repudiandae quo? Corporis
+					mollitia maiores cum voluptatibus sit rem blanditiis, itaque quas incidunt libero quis, optio maxime
+					accusamus necessitatibus pariatur aliquam eaque, sint adipisci temporibus? Corporis, nulla neque
+					obcaecati libero amet error numquam aperiam debitis quibusdam quae incidunt blanditiis. Distinctio
+					voluptate architecto vitae illo aspernatur quas consectetur cum non odit id illum, nobis dolor minima,
+					maiores neque optio aperiam dignissimos in minus cupiditate nihil nesciunt pariatur. Culpa reiciendis eum
+					suscipit laborum hic, rerum doloribus dolore commodi qui sed assumenda ut, ex expedita nihil inventore
+					quisquam odit quibusdam. Recusandae expedita quod error possimus eos, animi cum voluptatibus totam. Qui
+					sed officiis aut veritatis! Nostrum saepe architecto fugiat iure eos deleniti repellendus, minima placeat
+					ad ratione provident necessitatibus velit assumenda quaerat atque enim rerum fuga! Atque, aliquid? Nihil
+					doloribus rem dignissimos ipsam magnam ducimus deserunt, error, odit itaque voluptatem dolorem. Debitis
+					nihil numquam voluptates assumenda, laboriosam dolorum. Eum nostrum praesentium delectus porro impedit
+					consequatur, necessitatibus, iusto, quia veniam autem culpa ex dignissimos. Nihil, ducimus debitis. Quos
+					odit rerum laboriosam incidunt repudiandae, accusantium libero praesentium modi voluptatum nesciunt
+					tempora sed in eum, voluptatibus assumenda ipsa quis animi quam ab dignissimos. Repellendus harum optio
+					quos dolorem nisi quaerat a soluta provident voluptates libero accusamus explicabo est voluptate, vitae
+					doloribus mollitia officiis eum praesentium accusantium autem eos laborum eaque suscipit inventore?
+					Labore molestias quam quasi aliquid magnam quisquam, explicabo corrupti ab maxime dicta illo repudiandae
+					blanditiis praesentium deserunt quo voluptas numquam provident esse exercitationem. Sunt libero nostrum
+					ipsum, iure ad dolorem quibusdam rerum ullam. Ipsam dolorum illo, expedita debitis aliquam tempora. Rem,
+					maiores? Nesciunt eos provident magnam, unde voluptas earum, temporibus consectetur fugit a, ut animi!
+					Architecto assumenda alias nisi molestias minima accusantium labore. Modi, architecto numquam ipsam
+					tempore non fugit libero fugiat veniam repellat ab, eum eius dolorum corporis doloribus vel nobis quam
+					nemo at, quod ratione atque? Veniam quis, aperiam recusandae et vitae molestias soluta consequuntur neque
+					ducimus doloribus alias, voluptatem repudiandae temporibus totam perspiciatis corrupti eius voluptatum,
+					tempore unde maxime? Ipsum quaerat nesciunt ipsa cumque fugiat rerum voluptas assumenda rem repellendus
+					impedit, molestias eum dicta atque, at, autem corporis quisquam aliquam! Officiis ad, fuga in nihil ab
+					suscipit? Laudantium numquam eveniet repellat eaque in error nesciunt tempora tempore iure sit. Et
+					explicabo obcaecati impedit maxime facere rem distinctio asperiores ea ipsam porro possimus laborum, vel
+					perspiciatis commodi consequatur totam cum accusamus quasi. Pariatur beatae, assumenda quidem aliquid
+					harum recusandae unde hic eaque iusto ipsa tempora officiis, nisi laudantium repellat quasi, deserunt
+					amet! Deserunt eum magni dolores id odit vitae voluptatem accusamus dicta, ratione consequatur rem
+					mollitia expedita magnam nam necessitatibus quidem unde neque velit, harum cupiditate! Ducimus assumenda
+					aliquam reiciendis voluptates, perspiciatis expedita aut deserunt, minus veritatis molestiae hic! Labore,
+					sit, exercitationem modi, adipisci accusantium delectus enim dolor officiis magnam eum doloremque at ab
+					aspernatur rerum? Ducimus fugit numquam necessitatibus illum temporibus quas ea! Minima quidem unde
+					ratione a voluptatum dolorem est veniam vero non quod excepturi doloremque in deserunt beatae magni,
+					similique voluptatem recusandae quaerat reprehenderit! Delectus ducimus qui velit vel expedita laboriosam
+					quidem fugit sint! Illum nam doloremque deleniti accusantium repudiandae delectus odit beatae obcaecati
+					porro, distinctio neque voluptate, modi laborum labore facilis laboriosam quam voluptas dicta omnis quo.
+				</p>
+			</div>
+		</div>
+		<div class="main__size">
+			<h2 id="size"><span>Background</span>-size</h2>
+			<p>Масштабирует фоновое изображение согласно заданным размерам. В цифрах, где первое значение (проценты, px)
+				определяет ширину, второе - высоту. Либо специальным значением.</p>
+			<div class="main__size-standart main__test-block">
+				<p>Размеры картинки по умолчанию.
+					CSS:{background: url('Путь к картинке.') 0 0/auto auto no-repeat}</p>
+			</div>
+			<div class="main__size-width main__test-block">
+				<p>Размеры картинки по ширине блока.
+					CSS:{background: url('Путь к картинке.') 0 0/100% auto no-repeat}</p>
+			</div>
+			<div class="main__size-hight main__test-block">
+				<p>Размеры картинки по высоте блока.
+					CSS:{background: url('Путь к картинке.') 0 0/auto 100% no-repeat}</p>
+			</div>
+			<div class="main__size-width-hight main__test-block">
+				<p>Расстягиваем картинку на всю ширину и высоту блока.
+					CSS:{background: url('Путь к картинке.') 0 0/100% 100% no-repeat}</p>
+			</div>
+			<div class="main__size-contain main__test-block">
+				<p>Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь
+					блока. То есть по меньшей стороне картинки.
+					CSS:{background: url('Путь к картинке.') 0 0/contain no-repeat}</p>
+			</div>
+			<div class="main__size-cover main__test-block">
+				<p>Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или
+					высоте блока. То есть по большей стороне картинки.
+					CSS:{background: url('Путь к картинке.') 0 0/cover no-repeat}</p>
+			</div>
+			<div class="main__size-size main__test-block">
+				<p>Устанавливаем конкретные размеры. Если установлено одно значение, оно задает ширину фона, второе значение
+					принимается за auto. Пропорции картинки при этом сохраняются. Использование двух значений через пробел
+					задает ширину и высоту фоновой картинки.
+					CSS:{background: url('Путь к картинке.') 0 0/300px 400px no-repeat}</p>
+			</div>
+		</div>
+		<div class="main__many">
+			<h2 id="many"><span>Несколько </span>фоновых изображений</h2>
+			<p>Свойство background позволяет задать несколько фоновых изображений одному блоку, причем со своими
+				настройками позиционирования масштабирования и прокрутки. Указывать значения следует через запятую.</p>
+			<div class="main__many-one main__test-block">
+				<p>Цвет фона + одна картинка.
+					CSS:{background:цвет фона url('Путь к картинке.')} no-repeat</p>
+			</div>
+			<div class="main__many-two main__test-block">
+				<p>Две картинки, у каждой свои настройки. Каждая следующая ложится под предыдущую.
+					CSS:{background: url('Путь к картинке.') right no-repeat, url('Путь к картинке.') 50%/cover;}</p>
+			</div>
+			<div class="main__many-three main__test-block">
+				<p>Три картинки, у каждой свои настройки. Каждая следующая ложится под предыдущую.
+					CSS:{background:url('Путь к картинке.') bottom left/70px no-repeat, url('Путь к картинке.') right
+					no-repeat, url('Путь к картинке.') 50%/cover;}</p>
+			</div>
+			<div class="main__many-four main__test-block">
+				<p>Четыре картинки, у каждой свои настройки. Каждая следующая ложится под предыдущую.
+					CSS:{background: url('Путь к картинке.') center no-repeat, url('Путь к картинке.') bottom left/40px
+					no-repeat,
+					url('.Путь к картинке.') top right/40px no-repeat, url('Путь к картинке.') 50%/cover no-repeat;;}</p>
+			</div>
+		</div>
+		<div class="main__list">
+			<h2><span>Стилизация пунктов </span>списка</h2>
+			<p>Свойство background позволяет задать картинкой елемент пункта.</p>
+			<div class="main__list-list main__test-block">
+				<ul>
+					<li><a href="#color">Background-color</a></li>
+					<li><a href="#image">Background-image</a></li>
+					<li><a href="#repeat">Background-repeat</a></li>
+					<li><a href="#position">Background-position</a></li>
+					<li><a href="#attachment">Background-attachment</a></li>
+					<li><a href="#siz">Background-size</a></li>
+					<li><a href="#many">Несколько изображений</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main__img">
+			<img src="img/1.png" alt="Фото офиса" class="img__image">
+		</div>
+		<div class="main__shadow">
+			<p> shadow shadow shadow shadow</p>
+		</div>
+		<div class="main__more-text">
+			<span>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore voluptates suscipit odio
+				necessitatibus ipsa dolor adipisci esse ipsam alias.
+			</span>
+			<span>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore voluptates suscipit odio
+				necessitatibus ipsa dolor adipisci esse ipsam alias.
+			</span>
+			<span>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore voluptates suscipit odio
+				necessitatibus ipsa dolor adipisci esse ipsam alias.
+			</span>
+			<span>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore voluptates suscipit odio
+				necessitatibus ipsa dolor adipisci esse ipsam alias.
+			</span>
+		</div>
+		<div class="main__button">
+			<a href=""><span>SIGN UP NOW</span></a>
+		</div>
+		<div class="main__box">
+			<p>Box Shadows</p>
+		</div>
+		<div class="main__circle">
+			<img src="img/2.png" alt="Тень">
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__logo">
+			<p><span>F</span>rispe<span>s</span>.</p>
+		</div>
+		<div class="footer__text">
+			<p>We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your
+				best workspaces and meetings</p>
+		</div>
+		<div class="footer__contact">
+			<p>Contact Us</p>
+			<ul>
+				<li><a href=""><span>E.</span> Hello@frispes.com</a></li>
+				<li><a href=""><span>A.</span> Jalan Jayakatwang No.301 Ngasem, Kediri</a></li>
+				<li><a href=""><span>P.</span> (+62) 82334670000</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

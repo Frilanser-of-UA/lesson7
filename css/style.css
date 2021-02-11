@@ -1,0 +1,433 @@
+/* ===============Продключаем шрифты с сайта https://fonts.google.com============*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+/* ===============Продключаем шрифты файлами	============*/
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* ===============================Стили обнуления =====================================*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* --------------- */
+body{
+	color: #222831;
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+/* ===============================Задаем стили header=====================================*/
+.header {
+	background-color: aliceblue;
+	padding: 20px 30px 20px 30px;
+	margin: 50px auto;
+	max-width: 1170px;
+}
+/* ===============================Задаем стили логотипа =====================================*/
+.header .header__logo p, .footer__logo p{
+	font-family: 'Playfair Display';
+	font-size: 52px;
+	line-height: 128%;
+	font-weight: 700;
+	color: #10375C;
+	letter-spacing: 15px;
+	text-shadow: 1px 1px 1px black;
+	margin-left: 20px;
+}
+.header .header__logo p span, .footer__logo p span{
+	color: brown;
+	text-transform: uppercase;
+	text-shadow: 4px 2px 1px grey;
+
+}
+/* ===============================Задаем стили логотипа =====================================*/
+/* ===============================Задаем стили меню =====================================*/
+.nav {
+	background-color: ivory;
+	margin: 20px;
+}
+.nav li{
+	text-align: center;
+	display: inline;
+}
+.nav li a {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	line-height: 200%;
+	font-weight: bold;
+	color: #222831;
+	text-decoration: underline;
+	border: solid 2px rgb(103, 9, 185);
+	border-radius: 10px;
+}
+/* ===============================Задаем стили меню =====================================*/
+.user{
+background-color: khaki;
+text-align: right;
+}
+.user__login , .user__singup {
+	display: inline-block;
+	border: solid 1px darkgrey;
+	margin-right: 20px;
+}
+.user p{
+	text-align: right;
+	color: #FF5722;
+	font-weight: bold;
+	padding: 15px;
+}
+/* ===============================Задаем стили header=====================================*/
+/* ===============================Задаем стили контента=====================================*/
+.main {
+	padding: 20px 30px 20px 30px;
+	margin: 50px auto;
+	max-width: 1170px;
+}
+.main__color, .main__image, .main__repeat, .main__position, .main__attachment, .main__size, .main__many, .main__list{
+	margin-bottom: 20px;
+}
+.main__color h2, .main__image h2, .main__repeat h2, .main__position h2, .main__attachment h2, .main__size h2, .main__many h2, .main__list h2{
+	font-family: "Lora";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 129%;
+	color: rgba(16, 55, 92, 0.8);
+	text-align: center;
+	
+}
+.main__color span, .main__image span, .main__repeat span, .main__position span, .main__attachment span, .main__size span, .main__many span, .main__list span{
+color: rgb(221, 44, 0, 1.0);
+}
+.main__color p, .main__image p, .main__repeat p, .main__position p, .main__attachment p, .main__size p, .main__many p, .main__list p{
+	text-align: center;
+	padding: 20px;
+	font-size: 28px;
+	font-weight: 700;
+	font-family: "Lora";
+}
+.main__test-block{
+	margin-bottom: 20px;
+}
+.main__test-block p, .main__test-block ul{
+	border: solid 3px darkred;
+	border-radius: 10px;
+	color: #1d1a1a;
+	font-weight: 700;
+	word-spacing: 5px;
+	padding: 140px 20px;
+	font-size: 20px;
+	line-height: 140%;
+	text-align: center;
+}
+.main__test-block ul{
+	padding: 20px;
+}
+.main__color-color p{
+	background: #150;
+}
+.main__color-rbg p{
+ background:rgb(17, 85, 0);
+}
+.main__color-rbga p{
+	background: rgba(17, 85, 0, 0.5);
+}
+.main__color-rbga{
+	margin-bottom: 50px;
+}
+.main__image-standart p{
+	background: url('../img/3.jpg');
+	color: honeydew;
+}
+.main__gradient-linear p{
+	background: linear-gradient(to bottom, rgba(255, 0, 0, 1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);
+}
+.main__gradient-radial p{
+	background: radial-gradient(ellipse at center, rgba(30,102,157,1) 0%, rgba(255, 0, 0, 1) 0%,rgba(24,181,164,1) 100%);
+	margin-bottom: 50px;
+}
+.main__repeat-standart p{
+	color: honeydew;
+	background: url('../img/3.jpg');
+}
+.main__repeat-norepeat p{
+	background: url('../img/3.jpg') no-repeat;
+	color: grey;
+}
+.main__repeat-x p{
+	background: url('../img/3.jpg') repeat-x;
+	color: grey;
+}
+.main__repeat-y p{
+	background: url('../img/3.jpg') repeat-y;
+	color: grey;
+}
+.main__spase p{
+	background: url('../img/3.jpg') space;
+	color: grey;
+}
+.main__round p{
+	background: url('../img/3.jpg') round;
+	color: grey;
+}
+.main__position-standart p{
+	background: url('../img/3.jpg') 0 0 no-repeat;
+}
+.main__position-center p{
+	background: url('../img/3.jpg') center no-repeat;
+	color: grey;
+}
+.main__position-left p{
+	background: url('../img/3.jpg') left no-repeat;
+	color: grey;
+}
+.main__position-angle p{
+	background: url('../img/3.jpg') bottom right no-repeat;
+	color: grey;
+}
+.main__position-px p{
+	background: url('../img/3.jpg') 50px 25px no-repeat;
+	color: grey;
+}
+.main__attachment-standart p{
+	background: url('../img/bg-2.jpg') 0 0 no-repeat scroll;
+	color: darkred;
+}
+.main__attachment-fixed p{
+	background: url('../img/bg-2.jpg') 0 0 no-repeat fixed;
+}
+.main__attachment-local p{
+	background: url('../img/bg-2.jpg') 0 0 no-repeat local;
+	overflow: auto;
+	height: 300px;
+	padding: 10px;
+}
+.main__size-standart p {
+	background: url('../img/bg-2.jpg') 0 0/auto auto no-repeat;
+}
+.main__size-width p {
+	background: url('../img/bg-2.jpg') 0 0/100% auto no-repeat;
+}
+.main__size-hight p {
+	background: url('../img/bg-2.jpg') 0 0/auto 100% no-repeat;
+}
+.main__size-width-hight p {
+	background: url('../img/bg-2.jpg') 0 0/100% 100% no-repeat;
+}
+.main__size-contain p {
+	background: url('../img/bg-2.jpg') 0 0/contain no-repeat;
+}
+.main__size-cover p {
+	background: url('../img/bg-2.jpg') 0 0/cover no-repeat;
+}
+.main__size-size p {
+	background: url('../img/bg-2.jpg') 0 0/300px 400px no-repeat;
+}
+.main__many-one p{
+	background: #FF5722 url('../img/3.jpg') no-repeat;
+	color: darkgrey;
+}
+.main__many-two p{
+	background: url('../img/3.jpg') right no-repeat, url('../img/bg-2.jpg') 50%/cover no-repeat;
+}
+.main__many-three p{
+	background: url('../img/3.jpg') bottom left/70px no-repeat, url('../img/3.jpg') right no-repeat, url('../img/bg-2.jpg') 50%/cover no-repeat;
+}
+.main__many-four p{
+	background: url('../img/3.jpg') center no-repeat, url('../img/3.jpg') bottom left/40px no-repeat, url('../img/3.jpg') top right/40px no-repeat, url('../img/bg-2.jpg') 50%/cover no-repeat;
+}
+.main__list-list a{
+	text-align: left;
+	color: indigo;
+	display: block;
+	text-decoration: underline;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 35px;
+	min-height: 19px;
+	background: url("../img/4.png") 0 10px no-repeat;
+	margin: 0px 0px 25px 0px;
+}
+.main__img {
+	margin: 20px;
+}
+.img__image {
+	max-width: 100%;
+	margin-bottom: -300px;
+	opacity: 0.5;
+}
+/* ===============================Задаем стили тени=====================================*/
+.main__shadow p{
+	margin: 60px 20px 60px 20px;
+	color: rgba(13, 44, 74, 1.0);
+	line-height: 150%;
+	font-size: 68px;
+	height: 250px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	text-shadow: -5px 5px 0px  rgba(13, 44, 74, 0.8), -10px 10px 0px  rgba(13, 44, 74, 0.6), -15px 15px 0px  rgba(13, 44, 74, 0.4);
+}
+.main__more-text {
+	padding: 10px;
+	margin: 50px 20px;
+	max-width: 50%;
+	text-align: left;
+	text-indent: 15px;
+	font-size: 24px;
+}
+.main__more-text span{
+	background-color: darkkhaki;
+	border: solid 1px black;
+	margin: 150px;
+	border-radius: 10px;
+
+}
+.main__button{
+	margin: 150px 0px;
+	padding: 50px;
+}
+.main__button a{
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	background-color: #FF5722;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	max-width: 349px;
+	text-align: center;
+	line-height: 21px;
+	padding: 17px 15px;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+.main__button span{
+	padding: 0px 0px 0px 25px;
+	background:url("../img/3.jpg") 0 0 / auto 100% no-repeat;
+}
+.main__box{
+	max-width: 400px;
+	margin: 50px auto;
+	outline: solid 2px red;
+	box-shadow: 13px 16px #989898, 23px 31px #6c6666, 0px 0px 40px rgba(0, 0, 0, .5) inset;
+}
+.main__box p{
+	line-height: 96px;
+	font-weight:100;
+	font-size: 48px;
+	text-align: center;
+	padding: 150px 0px;
+}
+.main__circle{
+margin: 150px auto;
+max-width: 400px;
+}
+.main__circle img{
+max-width: 200px;
+height: 200px;
+border: solid 10px darkgray;
+border-radius: 50%;
+display: block;
+overflow: hidden;
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) inset, 0px 4px 27px 17px rgb(0, 0, 0, 0.6);
+}
+/* ===============================Задаем стили контента=====================================*/
+/* ===============================Задаем стили footer=====================================*/
+.footer {
+	background: #0D2C4A;
+	max-width: 1170px;
+	margin: 20px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top-left-radius: 55px;
+	border-bottom-right-radius: 55px;
+}
+.footer__logo{
+	margin-bottom: 30px;
+}
+.footer__logo p{
+	color: #FFFFFF;
+	font-family: "Lora";
+}
+.footer__text{
+	margin-bottom: 30px;
+}
+.footer__text p{
+	color: #F8F8F8;
+	line-height: 162.5%;
+
+}
+.footer__contact p, a{
+	color: #F8F8F8;
+	line-height: 162.5%;
+	letter-spacing: 5px;
+	word-spacing: 2px;
+}
+.footer__contact a span{
+	font-size: 28px;
+	color: maroon;
+	font-weight: bold;
+}
+.footer__contact a{
+	white-space:nowrap
+}
+.footer__contact p{
+	margin-bottom: 20px;
+}
+.footer__contact li{
+	margin-bottom: 20px;
+}
+/* ===============================Задаем стили footer=====================================*/
